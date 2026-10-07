@@ -19,9 +19,10 @@ namespace Lift
 
 
                 string[] tomb = olvaso.ReadLine().Split(' ');
+                DateTime datum = DateTime.Parse(tomb[0]);
                 hasznalatok.Add(
                 new Hasznalat(
-                int.Parse(tomb[0]),
+                datum,
                 int.Parse(tomb[1]),
                 int.Parse(tomb[2]),
                 int.Parse(tomb[3]
