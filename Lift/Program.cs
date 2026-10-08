@@ -39,6 +39,38 @@ namespace Lift
 
             Console.WriteLine("A vizsgált időszak: ", legkisebb + " - " + legnagyobb);
 
+            Console.WriteLine("Kérem a kártya számat: ");
+            string kartyaSzam = Console.ReadLine();
+            Console.WriteLine("Kérem a célemeletet: ");
+            string celEmelet = Console.ReadLine();
+
+            int kartyaSzamNumber = 0;
+            int celEmeletNumber =0;
+
+            try 
+            {
+             kartyaSzamNumber = int.Parse(kartyaSzam);
+            }
+            catch {
+                Console.WriteLine("Konverziós hiba. Alap kártyaszám beállítva");    
+                kartyaSzamNumber = 5;
+            }
+            try
+            {                
+                celEmeletNumber = int.Parse(celEmelet);
+            }
+            catch {
+                Console.WriteLine("Konverziós hiba. Alap emeletszám beállítva");
+                celEmeletNumber = 5;
+            }
+
+
+            Console.WriteLine("Vége");
+
+
+
+             
+
         }
     }
 }
