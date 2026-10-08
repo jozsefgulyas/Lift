@@ -32,7 +32,7 @@ namespace Lift
             }
 
             olvaso.Close();
-
+            Console.WriteLine("Összes lift használat: " + hasznalatok.Count);
 
 
         }
