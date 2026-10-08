@@ -39,6 +39,7 @@ namespace Lift
 
             Console.WriteLine("A vizsgált időszak: ", legkisebb + " - " + legnagyobb);
 
+           int legnagyobbEmeltek = hasznalatok.Max(x => x.celEmelet);
         }
     }
 }
