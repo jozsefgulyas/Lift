@@ -34,6 +34,10 @@ namespace Lift
             olvaso.Close();
             Console.WriteLine("Összes lift használat: " + hasznalatok.Count);
 
+           DateTime legkisebb = hasznalatok.Min(x => x.datum);
+           DateTime legnagyobb = hasznalatok.Max(x => x.datum);
+
+            Console.WriteLine("A vizsgált időszak: ", legkisebb + " - " + legnagyobb);
 
         }
     }
